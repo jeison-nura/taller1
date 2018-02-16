@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("logo.jpg");
+    background-color:white;
+}
+header, .main, footer{
+    width:90%;
+    max-width: 1000px;
+    margin:2% 13%;
+}
+div, #searchform {
+
+    float: left;
+}
+#ti {
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 3%;
+    padding-right: 20%;
+}
+
+div{
+    margin: 3%;
+}
+.main, footer{
+
+    background: rgba(242, 245, 244, 0.856);
+    width:90%;
+    max-width: 1000px;
+    margin:2% 13%;
+}
+
+.main{
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+header nav{
+    background: #C5DE06;
+    overflow: hidden;
+    float: left;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    
+
+}
+header nav ul {
+    list-style: none
+        
+    
+}
+header nav ul li {
+    float:left;
+}
+header nav ul li a {
+padding: 15px 30px;
+display: block;
+color: white;
+text-decoration: none;
+font-size: 110%;
+}
+
+
+header nav ul li a:hover {
+    background: rgb(212, 231, 43);
+}
+
+.main .articles {
+    width:68.5%;
+    margin-right: 1.5%;
+    float:left;   
+}
+.main .articles article{
+    padding: 20px;
+    background: rgba(229, 231, 230, 0.849);
+    margin-bottom: 20px;
+}
+.main .articles #mm {
+ padding: 20px;
+background: #519190;
+ margin-bottom: 20px;
+}
+.main .articles article h3, h4, p{
+    padding: 10px;
+}
+.cont{
+    color: white;
+}
+p{
+    text-align: justify;
+}
+h4{
+    color:#4D045A;
+}
+
+
+h4 ul {
+    padding: 10px;
+
+}
+
+
+#bar  {
+    width: 30%;
+    background:#D70162;
+    float: left;
+    padding: 20px;
+    margin: 0px;
+    box-sizing:border-box;
+    
+}
+#bar a {
+    color: white;
+}
+
+footer{
+    background:#BB1031;
+    color: white;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
+footer a {
+    color: black;
+}
+
+#searchform {
+    width: 280px;
+	height:30px;
+    padding: 1%;
+	margin:0% 70%;
+    background: #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+    
+}
+#searchform input {
+    width: 190px;
+	height:20px;
+    padding: 5px;
+    float: left;
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+}
+#searchform input:focus {
+    outline: 0;
+	height:21px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+#searchform input:-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+ }
+ #searchform input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#searchform input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+#searchform button {
+    position: relative;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    font-size:15px;
+    color: #fff;
+    background: #4D045A;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+} 
+#searchform button:hover{
+    background: #2672e0;
+}	
+#searchform button:active,
+#searchform button:focus{
+    background: #2672e0;
+}
+#searchform button:before { /* flecha */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #4D045A transparent;
+    top: 8px;
+    left: -5px;
+}
+#searchform button:hover:before{
+    border-right-color: #2672e0;
+}
+#searchform button:focus:before{
+    border-right-color: #2672e0;
+}
+    
+div, span, applet, object, iframe,h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+table {
+	margin: 15px 0px;
+	border-collapse: separate;
+	empty-cells: show;
+	border-spacing: 1px;
+	caption-side: bottom;
+	table-layout: auto;
+}
+table {
+	width: 100%;
+	max-width: 690px;
+	display: block;
+	clear: both;
+	font-size: 0.9em;
+	margin-bottom: 1.5em;
+}
+.itemnode {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px dotted #AAAAAA;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#content .padding {
+	padding: 0 10px 10px 10px;
+}
+#content {
+	float: right;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+#content {
+	width: 720px;
+}
+.wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+[lang] {
+	font-style: italic;
+}
+tbody, tr {
+	width: 100% !important;
+}
+.filatitulo {
+	width: 100%;
+}
+.filaimpar {
+	width: 100%;
+}
+.filapar {
+	width: 100%;
+}
+td {
+	padding: 5px;
+}
+.filapar td {
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: rgba(185, 197, 22, 0.904);
+}
+a {
+	color: #007fff;
+}
+
+.aa{
+    color: black;
+}
+.filaimpar td {
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: rgba(218, 236, 22, 0.671);
+}
+th {
+	padding: 5px 10px;
+	font-weight: bold;
+	text-align: center;
+}
+.filatitulo th {
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: rgb(197, 222, 6);
+	text-align: left;
+	color: #fff;
+}
+.Porque {
+    color:rgb(107, 11, 126); 
+    
+}
+.main .articles article ul li, ol li{
+    line-height: 23px;
+}
+#requisitos {
+    color: black;
+    font-size: 17px;
+}
