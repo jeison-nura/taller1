@@ -18,7 +18,14 @@ import javax.persistence.Id;
 @Entity
 public class UsuarioEntity {
     
+    
+     /**
+     * Atributo estático para el manejo de versiones de la entidad
+     */
+         private final static long serialVersionUID= 1L;
+    
     /**
+     * llave primaria del entity usuario
      * variable que almacena el codigo del usuario
      */
     @Id
