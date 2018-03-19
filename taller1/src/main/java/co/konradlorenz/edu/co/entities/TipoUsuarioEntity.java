@@ -31,29 +31,31 @@ public class TipoUsuarioEntity implements Serializable{
     @Id
     @Column(name = "cod_t_usuario", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long cod_t_usuario;
+    private long codido_tipo_usuario;
     
     /**
      * variable que almacena el nombre del tipo de usuario
      */
     @Column(name = "nom_t_usuario", nullable = false)
-    private String nombre_t_usuario;
+    private String nombre_tipo_usuario;
 
-    public long getCod_t_usuario() {
-        return cod_t_usuario;
+    public long getCodido_tipo_usuario() {
+        return codido_tipo_usuario;
     }
 
-    public void setCod_t_usuario(long cod_t_usuario) {
-        this.cod_t_usuario = cod_t_usuario;
+    public void setCodido_tipo_usuario(long codido_tipo_usuario) {
+        this.codido_tipo_usuario = codido_tipo_usuario;
     }
 
-    public String getNombre_t_usuario() {
-        return nombre_t_usuario;
+    public String getNombre_tipo_usuario() {
+        return nombre_tipo_usuario;
     }
 
-    public void setNombre_t_usuario(String nombre_t_usuario) {
-        this.nombre_t_usuario = nombre_t_usuario;
+    public void setNombre_tipo_usuario(String nombre_tipo_usuario) {
+        this.nombre_tipo_usuario = nombre_tipo_usuario;
     }
+
+    
     
     
 }
