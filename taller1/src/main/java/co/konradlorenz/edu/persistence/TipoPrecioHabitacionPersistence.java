@@ -19,7 +19,7 @@ import javax.persistence.Query;
  */
 @Stateless
 public class TipoPrecioHabitacionPersistence {
-     @PersistenceContext(unitName = "reservasPU")
+    @PersistenceContext(unitName = "reservasPU")
     protected EntityManager em;
     
      /**
