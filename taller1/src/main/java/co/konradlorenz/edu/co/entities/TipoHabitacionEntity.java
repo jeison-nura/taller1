@@ -15,43 +15,40 @@ import javax.persistence.Id;
  */
 @Entity
 public class TipoHabitacionEntity {
-    
      /**
      * Atributo estático para el manejo de versiones de la entidad
      */
     private final static long serialVersionUID= 1L;
     
-     /**
-     * llave primaria del entity tipo de habitacion
-     * variable que captura el codigo de ciudad
+    /**
+     * llave principal del tipo de habitacion
      */
     @Id
-    @Column(name = "cod_p_habitacion", unique = true)
-    private long codigo_precio_habitacion;
+    @Column(name = "cod_t_habitacion", unique = true)
+    private long codigo_tipo_habitacion;
     
     /**
-     *variable que guarda el valor de la habitacion
+     * nombre del tipo de habitacion
      */
-    @Column(name = "valor", nullable = false)
-    private long costo_habitacion;
+    @Column(name = "nom_t_habitacion", nullable = false)
+    private String nombre_tipo_habitacion;
 
-    public long getCodigo_precio_habitacion() {
-        return codigo_precio_habitacion;
+    public long getCodigo_tipo_habitacion() {
+        return codigo_tipo_habitacion;
     }
 
-    public void setCodigo_precio_habitacion(long codigo_precio_habitacion) {
-        this.codigo_precio_habitacion = codigo_precio_habitacion;
+    public void setCodigo_tipo_habitacion(long codigo_tipo_habitacion) {
+        this.codigo_tipo_habitacion = codigo_tipo_habitacion;
     }
 
-    public long getCosto_habitacion() {
-        return costo_habitacion;
+    public String getNombre_tipo_habitacion() {
+        return nombre_tipo_habitacion;
     }
 
-    public void setCosto_habitacion(long costo_habitacion) {
-        this.costo_habitacion = costo_habitacion;
+    public void setNombre_tipo_habitacion(String nombre_tipo_habitacion) {
+        this.nombre_tipo_habitacion = nombre_tipo_habitacion;
     }
+    
     
     
 }
-
-

@@ -23,8 +23,8 @@ public class UsuarioPersistence {
     protected EntityManager em;
     
      /**
-     * Obtener la lista con los datos de la tabla Curso
-     * @return Lista de datos de la tabla Curso
+     * Obtener la lista con los datos de la tabla usuario
+     * @return Lista de datos de la tabla usuario
      */
     public List<UsuarioEntity> findAll(){
         Query todos = em.createQuery("select e from UsuarioEntity e");
@@ -32,40 +32,40 @@ public class UsuarioPersistence {
     }
     
      /**
-     * Encontrar una tupla especifica de la tabla Curso
+     * Encontrar una tupla especifica de la tabla usuario
      * @param id que se desea buscar
      * @return cursoEntity
      */
     public UsuarioEntity find(Long id){
-        UsuarioEntity curso = em.find(UsuarioEntity.class, id);
-        return curso;
+        UsuarioEntity usuario = em.find(UsuarioEntity.class, id);
+        return usuario;
     }
     
     /**
-     * Creacion de un nuevo curso
-     * @param curso
-     * @return nuevo curso creado
+     * Creacion de un nuevo usuario
+     * @param usuario
+     * @return nuevo usuario creado
      */
-    public UsuarioEntity create(UsuarioEntity curso){
-        em.persist(curso);
-        return curso;
+    public UsuarioEntity create(UsuarioEntity usuario){
+        em.persist(usuario);
+        return usuario;
     }
     
     /**
-     * Actualizacion de una tupla de la tabla Curso
-     * @param cursoActualizar
-     * @return curso actualizado
+     * Actualizacion de una tupla de la tabla servicio
+     * @param servicioActualizar
+     * @return sercvicio actualizado
      */
-    public UsuarioEntity update (UsuarioEntity cursoActualizar){
-        return em.merge(cursoActualizar);
+    public UsuarioEntity update (UsuarioEntity servicioActualizar){
+        return em.merge(servicioActualizar);
     }
     
     /**
-     * Elimina una tupla curso de la tabla
+     * Elimina una tupla curso de la tabla servicio
      * @param id 
      */
     public void delete (Long id){
-        UsuarioEntity cursoDelete = em.find(UsuarioEntity.class, id);
-        em.remove(cursoDelete);
+        UsuarioEntity servicioDelete = em.find(UsuarioEntity.class, id);
+        em.remove(servicioDelete);
     }
 }

@@ -5,7 +5,8 @@
  */
 package co.konradlorenz.edu.persistence;
 
-import co.konradlorenz.edu.co.entities.CiudadEntity;
+
+import co.konradlorenz.edu.co.entities.HotelEntity;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -20,49 +21,49 @@ public class HotelPersistence {
     protected EntityManager em;
     
      /**
-     * Obtener la lista con los datos de la tabla Curso
-     * @return Lista de datos de la tabla Curso
+     * Obtener la lista con los datos de la tabla Hotel
+     * @return Lista de datos de la tabla hotel
      */
-    public List<CiudadEntity> findAll(){
-        Query todos = em.createQuery("select e from CiudadEntity e");
+    public List<HotelEntity> findAll(){
+        Query todos = em.createQuery("select e from HotelEntity e");
         return todos.getResultList();
     }
     
      /**
-     * Encontrar una tupla especifica de la tabla Curso
+     * Encontrar una tupla especifica de la tabla Hotel
      * @param id que se desea buscar
-     * @return cursoEntity
+     * @return hotelEntity
      */
-    public CiudadEntity find(Long id){
-        CiudadEntity curso = em.find(CiudadEntity.class, id);
-        return curso;
+    public HotelEntity find(Long id){
+        HotelEntity hotel = em.find(HotelEntity.class, id);
+        return hotel;
     }
     
     /**
-     * Creacion de un nuevo curso
-     * @param curso
-     * @return nuevo curso creado
+     * Creacion de un nuevo Hotel
+     * @param hotel
+     * @return nuevo hotel creado
      */
-    public CiudadEntity create(CiudadEntity curso){
-        em.persist(curso);
-        return curso;
+    public HotelEntity create(HotelEntity hotel){
+        em.persist(hotel);
+        return hotel;
     }
     
     /**
-     * Actualizacion de una tupla de la tabla Curso
+     * Actualizacion de una tupla de la tabla Hotel
      * @param cursoActualizar
-     * @return curso actualizado
+     * @return hotel actualizado
      */
-    public CiudadEntity update (CiudadEntity cursoActualizar){
-        return em.merge(cursoActualizar);
+    public HotelEntity update (HotelEntity hotelActualizar){
+        return em.merge(hotelActualizar);
     }
     
     /**
-     * Elimina una tupla curso de la tabla
+     * Elimina una tupla del Hotel
      * @param id 
      */
     public void delete (Long id){
-        CiudadEntity cursoDelete = em.find(CiudadEntity.class, id);
-        em.remove(cursoDelete);
+        HotelEntity hotelDelete = em.find(HotelEntity.class, id);
+        em.remove(hotelDelete);
     }
 }

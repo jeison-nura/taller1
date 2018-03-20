@@ -22,8 +22,8 @@ public class CiudadPersistence {
     protected EntityManager em;
     
      /**
-     * Obtener la lista con los datos de la tabla Curso
-     * @return Lista de datos de la tabla Curso
+     * Obtener la lista con los datos de la tabla Ciudad
+     * @return Lista de datos de la tabla Ciudad
      */
     public List<CiudadEntity> findAll(){
         Query todos = em.createQuery("select e from CiudadEntity e");
@@ -31,40 +31,40 @@ public class CiudadPersistence {
     }
     
      /**
-     * Encontrar una tupla especifica de la tabla Curso
+     * Encontrar una tupla especifica de la tabla Ciudad
      * @param id que se desea buscar
-     * @return cursoEntity
+     * @return ciudadEntity
      */
     public CiudadEntity find(Long id){
-        CiudadEntity curso = em.find(CiudadEntity.class, id);
-        return curso;
+        CiudadEntity ciudad = em.find(CiudadEntity.class, id);
+        return ciudad;
     }
     
     /**
-     * Creacion de un nuevo curso
-     * @param curso
-     * @return nuevo curso creado
+     * Creacion de un nuevo Ciudad
+     * @param ciudad
+     * @return nueva ciudad creada
      */
-    public CiudadEntity create(CiudadEntity curso){
-        em.persist(curso);
-        return curso;
+    public CiudadEntity create(CiudadEntity ciudad){
+        em.persist(ciudad);
+        return ciudad;
     }
     
     /**
-     * Actualizacion de una tupla de la tabla Curso
-     * @param cursoActualizar
-     * @return curso actualizado
+     * Actualizacion de una tupla de la tabla Ciudad
+     * @param ciudadActualizar
+     * @return ciudad actualizado
      */
-    public CiudadEntity update (CiudadEntity cursoActualizar){
-        return em.merge(cursoActualizar);
+    public CiudadEntity update (CiudadEntity ciudadActualizar){
+        return em.merge(ciudadActualizar);
     }
     
     /**
-     * Elimina una tupla curso de la tabla
+     * Elimina una tupla curso de la tabla ciudad
      * @param id 
      */
     public void delete (Long id){
-        CiudadEntity cursoDelete = em.find(CiudadEntity.class, id);
-        em.remove(cursoDelete);
+        CiudadEntity ciudadDelete = em.find(CiudadEntity.class, id);
+        em.remove(ciudadDelete);
     }
 }
