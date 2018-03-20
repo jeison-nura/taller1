@@ -7,6 +7,8 @@ package co.konradlorenz.edu.co.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -23,6 +25,7 @@ public class DarServicioEntity {
     
     @Id
     @Column(name = "cod_dar_servicio", unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_servicio_dado;
     
     /**

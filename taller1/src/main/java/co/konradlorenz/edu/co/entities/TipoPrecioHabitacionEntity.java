@@ -7,6 +7,8 @@ package co.konradlorenz.edu.co.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -27,6 +29,7 @@ public class TipoPrecioHabitacionEntity {
      */
     @Id
     @Column(name = "cod_p_habitacion", unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_precio_habitacion;
     
     /**
