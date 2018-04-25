@@ -1,0 +1,10 @@
+Para el dearrollo de la aplicación web:
+
+Se creó un proyecto Maven
+Se usó un servidor de aplicaciones GlassFish 4.1, con la base de datos que ofrece Netbeans
+Las entidades estan todas en un solo paquete (co.edu.konrad.cadenahotelera.entities),
+y en otro paquete adicional (co.edu.konrad.cadenahotelera.persistence) se encuentran las Persistencias,
+las cuales tienen una PU (PERSISTENCE UNIT) llamada "reservasPU"
+
+
+El modelo aplicado al desarollo de la aplicacion es el MODELO VISTA CONTROLADOR.
