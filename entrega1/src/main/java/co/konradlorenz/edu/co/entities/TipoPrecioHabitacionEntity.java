@@ -10,6 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -32,6 +35,10 @@ public class TipoPrecioHabitacionEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_precio_habitacion;
     
+    
+    @OneToOne
+    @JoinColumn(name="cod_p_habitacion")
+    private HabitacionEntity habitacionentity;
     /**
      *variable que guarda el valor de la habitacion
      */

@@ -10,6 +10,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -32,23 +36,17 @@ public class ReservaEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_reserva;
     
-    /**
-     * variable con el codigo de usuario
-     */
-    @Column(name = "cod_usuario", nullable = false)
-    private long codigo_usuario;
+    @ManyToOne
+    @JoinColumn(name="cod_usuario")
+    private UsuarioEntity usuarioentoty;
     
-    /**
-     * variable con el codigo de la ciudad
-     */
-    @Column(name = "cod_ciudad", nullable = false)
-    private long codigo_ciudad;
+    @OneToOne
+    @JoinColumn(name="cod_ciudad")
+    private CiudadEntity ciudadentity;
     
-    /**
-     * variable con el codigo del hotel
-     */
-    @Column(name = "cod_hotel", nullable = false)
-    private long codigo_hotel;
+    @ManyToOne
+    @JoinColumn(name="cod_hotel")
+    private HotelEntity hotelentity;
     
     /**
      * variable con el codigo del habitacion
@@ -82,30 +80,9 @@ public class ReservaEntity {
         this.codigo_reserva = codigo_reserva;
     }
 
-    public long getCodigo_usuario() {
-        return codigo_usuario;
-    }
+  
 
-    public void setCodigo_usuario(long codigo_usuario) {
-        this.codigo_usuario = codigo_usuario;
-    }
-
-    public long getCodigo_ciudad() {
-        return codigo_ciudad;
-    }
-
-    public void setCodigo_ciudad(long codigo_ciudad) {
-        this.codigo_ciudad = codigo_ciudad;
-    }
-
-    public long getCodigo_hotel() {
-        return codigo_hotel;
-    }
-
-    public void setCodigo_hotel(long codigo_hotel) {
-        this.codigo_hotel = codigo_hotel;
-    }
-
+   
     public long getCodigo_habitacion() {
         return codigo_habitacion;
     }

@@ -8,6 +8,9 @@ package co.konradlorenz.edu.co.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -26,6 +29,10 @@ public class TipoHabitacion {
     @Id
     @Column(name = "cod_t_habitacion", unique = true)
     private long codigo_tipo_habitacion;
+    
+    @OneToOne
+    @JoinColumn(name="cod_t_habitacion")
+    private HabitacionEntity habitacionentity;
     
     /**
      * nombre del tipo de habitacion

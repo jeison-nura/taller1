@@ -10,6 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -36,6 +39,10 @@ public class MetodoPagoEntity {
      */
     @Column(name = "nom_f_pago", nullable = false)
     private String nombre_forma_pago;
+    
+    @ManyToOne
+    @JoinColumn(name="cod_f_pago")
+    private ReservaEntity reservaentity;
 
     public long getCodigo_forma_pago() {
         return codigo_forma_pago;

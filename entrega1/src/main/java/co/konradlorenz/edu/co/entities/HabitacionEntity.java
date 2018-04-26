@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 
 /**
  *
@@ -30,6 +32,10 @@ public class HabitacionEntity {
     @Column(name = "cod_habitacion", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_habitacion;
+    
+    @ManyToMany
+    @JoinColumn(name="cod_hotel")
+    private HotelEntity hotelentity;
     
     /**
      * codigo del hotel

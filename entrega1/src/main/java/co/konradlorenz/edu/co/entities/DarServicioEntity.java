@@ -10,6 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -28,41 +31,13 @@ public class DarServicioEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_servicio_dado;
     
-    /**
-     * campo enlace con el codigo de servicio de la habitacion
-     */
-    @Column(name = "cod_d_servicio", nullable = false)
-    private long codigo_del_servicio;
+    @ManyToOne
+    @JoinColumn(name="cod_d_servicio")
+    private HabitacionEntity habitacionentity;
     
-    /**
-     * variable que conecta con el servicio
-     */
-    @Column(name = "cod_servicio", nullable = false)
-    private long codigo_servicio;
-
-    public long getCodigo_servicio_dado() {
-        return codigo_servicio_dado;
-    }
-
-    public void setCodigo_servicio_dado(long codigo_servicio_dado) {
-        this.codigo_servicio_dado = codigo_servicio_dado;
-    }
-
-    public long getCodigo_del_servicio() {
-        return codigo_del_servicio;
-    }
-
-    public void setCodigo_del_servicio(long codigo_del_servicio) {
-        this.codigo_del_servicio = codigo_del_servicio;
-    }
-
-    public long getCodigo_servicio() {
-        return codigo_servicio;
-    }
-
-    public void setCodigo_servicio(long codigo_servicio) {
-        this.codigo_servicio = codigo_servicio;
-    }
+    @ManyToOne
+    @JoinColumn(name="cod_servicio")
+    private ServicioEntity servicioentity;
     
     
 }

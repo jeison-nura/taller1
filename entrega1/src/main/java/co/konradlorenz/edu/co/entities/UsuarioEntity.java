@@ -10,6 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -32,6 +35,10 @@ public class UsuarioEntity {
     @Column(name = "cod_usuario", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codido_usuario;
+    
+    @ManyToOne
+    @JoinColumn(name="cod_t_usuario")
+    private TipoUsuarioEntity tipousuarioentity;
     
     /**
      * variable que captura el nombre del usuario
