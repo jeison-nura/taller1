@@ -7,6 +7,9 @@ package co.konradlorenz.edu.co.dto;
 
 import co.konradlorenz.edu.co.entities.ServicioEntity;
 import co.konradlorenz.edu.co.entities.TipoHabitacionEntity;
+import co.konradlorenz.edu.co.entities.TipoUsuarioEntity;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
+import java.util.List;
 
 /**
  *
@@ -48,4 +51,38 @@ public class serviciodto {
         servicio.setCosto(this.precio);
         return servicio;
     }
+    
+    public List<serviciodto> toservList(List<ServicioEntity> servList){
+        List<serviciodto> listaservDTO = new VirtualFlow.ArrayLinkedList<>();
+        for (int i = 0; i < servList.size(); i++) {            
+            listaservDTO.add(new serviciodto(servList.get(i)));
+        }
+        return listaservDTO;        
+    }
+
+    public Long getCod_servicio() {
+        return cod_servicio;
+    }
+
+    public void setCod_servicio(Long cod_servicio) {
+        this.cod_servicio = cod_servicio;
+    }
+
+    public String getNombre_servicio() {
+        return nombre_servicio;
+    }
+
+    public void setNombre_servicio(String nombre_servicio) {
+        this.nombre_servicio = nombre_servicio;
+    }
+
+    public Long getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Long precio) {
+        this.precio = precio;
+    }
+    
+    
 }

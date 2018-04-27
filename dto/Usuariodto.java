@@ -5,7 +5,10 @@
  */
 package co.konradlorenz.edu.co.dto;
 
+import co.konradlorenz.edu.co.entities.TipoUsuarioEntity;
 import co.konradlorenz.edu.co.entities.UsuarioEntity;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
+import java.util.List;
 
 /**
  *
@@ -53,4 +56,54 @@ public class Usuariodto {
         usuario.setCorreo(this.correo);
         return usuario;
     }
+    
+    public List<Usuariodto> tousuList(List<UsuarioEntity> usuList){
+        List<Usuariodto> listausuDTO = new VirtualFlow.ArrayLinkedList<>();
+        for (int i = 0; i < usuList.size(); i++) {            
+            listausuDTO.add(new Usuariodto(usuList.get(i)));
+        }
+        return listausuDTO;        
+    }
+
+    public Long getCod_usuario() {
+        return cod_usuario;
+    }
+
+    public void setCod_usuario(Long cod_usuario) {
+        this.cod_usuario = cod_usuario;
+    }
+
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getApellidoUsuario() {
+        return ApellidoUsuario;
+    }
+
+    public void setApellidoUsuario(String ApellidoUsuario) {
+        this.ApellidoUsuario = ApellidoUsuario;
+    }
+
+    public Long getCod_t_usuario() {
+        return cod_t_usuario;
+    }
+
+    public void setCod_t_usuario(Long cod_t_usuario) {
+        this.cod_t_usuario = cod_t_usuario;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    
+    
 }

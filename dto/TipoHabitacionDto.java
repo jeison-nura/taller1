@@ -7,6 +7,8 @@ package co.konradlorenz.edu.co.dto;
 
 import co.konradlorenz.edu.co.entities.TipoHabitacionEntity;
 import co.konradlorenz.edu.co.entities.TipoUsuarioEntity;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
+import java.util.List;
 
 /**
  *
@@ -48,4 +50,38 @@ public class TipoHabitacionDto {
         thabitacion.setPrecio_tipo_habitacion(this.precio);
         return thabitacion;
     }
+    
+    public List<TipoHabitacionDto> tothabiList(List<TipoHabitacionEntity> thabiList){
+        List<TipoHabitacionDto> listathabiDTO = new VirtualFlow.ArrayLinkedList<>();
+        for (int i = 0; i < thabiList.size(); i++) {            
+            listathabiDTO.add(new TipoHabitacionDto(thabiList.get(i)));
+        }
+        return listathabiDTO;
+    }
+
+    public Long getCod_t_habitacion() {
+        return cod_t_habitacion;
+    }
+
+    public void setCod_t_habitacion(Long cod_t_habitacion) {
+        this.cod_t_habitacion = cod_t_habitacion;
+    }
+
+    public String getNombre_t_habitacion() {
+        return nombre_t_habitacion;
+    }
+
+    public void setNombre_t_habitacion(String nombre_t_habitacion) {
+        this.nombre_t_habitacion = nombre_t_habitacion;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+    
+    
 }
