@@ -1,20 +1,55 @@
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\CiudadPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\DarServicioPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\TipoHabitacionPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\UsuarioPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\HotelEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\CiudadEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\HotelPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\MetodoPagoPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\TipoUsuarioPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\ServicioPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\DarServicioEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\ServicioEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\TipoUsuarioEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\ReservaEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\TipoPrecioHabitacionPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\UsuarioEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\MetodoPagoEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\persistence\ReservaPersistence.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\TipoPrecioHabitacionEntity.java
-C:\Users\jeison\Documents\NetBeansProjects\taller1\src\main\java\co\konradlorenz\edu\co\entities\TipoHabitacionEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\ServicioDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\HotelLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\ReservaLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\ServicioDadoEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\CiudadResource.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\ServicioDadoLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\TipoUsuarioEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\HabitacionResource.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\UsuarioResources.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\HabitacionPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\HotelDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\EstadoHabitacionLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\ServicioPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\CiudadLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\ReservaPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\HotelResource.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\ServicioResources.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\ServicioLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\MetodoPagoLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\UsuarioLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\HotelPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\HabitacionLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\ReservaResource.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\MetodoPagoEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\ReservaDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\TipoHabitacionPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\TipoUsuarioPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\EstadoHabitacionDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\CiudadPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\MetodoPagoResources.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\TipoUsuarioLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\logic\TipoHabitacionLogic.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\HabitacionDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\EstadoHabitacionPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\TiposUsuarioDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\UsuarioPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\EstadoHabitacionEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\ServicioDadoPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\TipoHabitacionDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\CiudadEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\ServicioEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\EstadoHabitacionResource.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\persistence\MetodoPagoPersistence.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\HotelEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\UsuarioEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\MetodoPagoDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\CiudadDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\TipoHabitacionResources.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\HabitacionEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\ServicioDadoDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\TipoHabitacionEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\TipoUsuarioResources.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\entities\ReservaEntity.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\dto\UsuarioDTO.java
+C:\Users\EnriqueS\Documents\Konrad\2018-I\Nuevas Tecnologías de Desarrollo\936hoteles\entrega1\src\main\java\co\edu\konradlorenz\cadenahotelera\resources\ServicioDadoResources.java
