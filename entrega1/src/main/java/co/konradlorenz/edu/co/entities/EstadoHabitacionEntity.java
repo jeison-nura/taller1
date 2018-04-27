@@ -5,6 +5,7 @@
  */
 package co.konradlorenz.edu.co.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,12 +17,13 @@ import javax.persistence.Id;
  * @author jeison
  */
 @Entity
-public class EstadoHabitacionEntity {
+public class EstadoHabitacionEntity implements Serializable {
+
     /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-    private final static long serialVersionUID= 1L;
-    
+    private final static long serialVersionUID = 1L;
+
     /**
      * llave principal de la entidad estadohabitacion
      */
@@ -29,7 +31,7 @@ public class EstadoHabitacionEntity {
     @Column(name = "cod_estado", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_estado;
-    
+
     /**
      * variable con nombre del estado
      */
@@ -51,6 +53,5 @@ public class EstadoHabitacionEntity {
     public void setNombre_estado(String nombre_estado) {
         this.nombre_estado = nombre_estado;
     }
-    
-    
+
 }

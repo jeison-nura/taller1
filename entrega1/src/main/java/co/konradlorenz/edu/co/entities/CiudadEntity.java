@@ -20,25 +20,20 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class CiudadEntity {
-    
-     /**
+
+    /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-    private final static long serialVersionUID= 1L;
-    
+    private final static long serialVersionUID = 1L;
+
     /**
-     * llave primaria del entity ciudad
-     * variable que captura el codigo de ciudad
+     * llave primaria del entity ciudad variable que captura el codigo de ciudad
      */
     @Id
     @Column(name = "cod_ciudad", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_ciudad;
-    
-    @ManyToMany
-    @JoinColumn(name="cod_ciudad")
-    private HotelEntity hotelentity;
-    
+
     /**
      * variable que guarda el nombre de ciudad
      */
@@ -60,7 +55,5 @@ public class CiudadEntity {
     public void setNombre_ciudad(String nombre_ciudad) {
         this.nombre_ciudad = nombre_ciudad;
     }
-    
-    
-}
 
+}

@@ -5,6 +5,7 @@
  */
 package co.konradlorenz.edu.co.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,19 +13,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
  * @author jeison
  */
 @Entity
-public class HabitacionEntity {
-    
-     /**
+public class HabitacionEntity implements Serializable {
+
+    /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-    private final static long serialVersionUID= 1L;
-    
+    private final static long serialVersionUID = 1L;
+
     /**
      * llave principal de la entidad habitacion
      */
@@ -32,46 +34,42 @@ public class HabitacionEntity {
     @Column(name = "cod_habitacion", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_habitacion;
-    
-    @ManyToMany
-    @JoinColumn(name="cod_hotel")
-    private HotelEntity hotelentity;
-    
+
     /**
      * codigo del hotel
      */
     @Column(name = "cod_hotel", nullable = false)
     private long codigo_hotel;
-    
+
     /**
      * variable numero de habitacion
      */
-    @Column(name = "num_hotel", unique = true)
+    @Column(name = "num_habitacion", unique = true)
     private long numero_habitacion;
-    
+
     /**
      * variable con el estado de la habitacion
      */
     @Column(name = "cod_estado", nullable = false)
     private long codigo_estado;
-    
+
     /**
      * codigo con el tipo de habitacion
      */
     @Column(name = "cod_t_habitacion", nullable = false)
     private long codigo_tipo_habitacion;
-    
-    /**
-     * variable con el codigo precio habitacion
-     */
-    @Column(name = "cod_p_habitacion", nullable = false)
-    private long codigo_precio_habitacion;
-    
-    /**
-     * variable con codigo del servicio
-     */
-    @Column(name = "cod_d_servicio", nullable = false)
-    private long codigo_del_servicio;
+
+    @ManyToOne
+    @JoinColumn(name = "cod_hotel")
+    private HotelEntity hotelentity;
+
+    @ManyToOne
+    @JoinColumn(name = "cod_t_habitacion")
+    private TipoHabitacionEntity tipoHabitacionEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "cod_estado")
+    private EstadoHabitacionEntity estadoHabitacionEntity;
 
     public long getCodigo_habitacion() {
         return codigo_habitacion;
@@ -113,21 +111,28 @@ public class HabitacionEntity {
         this.codigo_tipo_habitacion = codigo_tipo_habitacion;
     }
 
-    public long getCodigo_precio_habitacion() {
-        return codigo_precio_habitacion;
+    public HotelEntity getHotelentity() {
+        return hotelentity;
     }
 
-    public void setCodigo_precio_habitacion(long codigo_precio_habitacion) {
-        this.codigo_precio_habitacion = codigo_precio_habitacion;
+    public void setHotelentity(HotelEntity hotelentity) {
+        this.hotelentity = hotelentity;
     }
 
-    public long getCodigo_del_servicio() {
-        return codigo_del_servicio;
+    public TipoHabitacionEntity getTipoHabitacionEntity() {
+        return tipoHabitacionEntity;
     }
 
-    public void setCodigo_del_servicio(long codigo_del_servicio) {
-        this.codigo_del_servicio = codigo_del_servicio;
+    public void setTipoHabitacionEntity(TipoHabitacionEntity tipoHabitacionEntity) {
+        this.tipoHabitacionEntity = tipoHabitacionEntity;
     }
-    
-    
+
+    public EstadoHabitacionEntity getEstadoHabitacionEntity() {
+        return estadoHabitacionEntity;
+    }
+
+    public void setEstadoHabitacionEntity(EstadoHabitacionEntity estadoHabitacionEntity) {
+        this.estadoHabitacionEntity = estadoHabitacionEntity;
+    }
+
 }

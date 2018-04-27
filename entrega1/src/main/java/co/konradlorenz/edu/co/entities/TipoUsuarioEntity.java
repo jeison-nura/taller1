@@ -17,34 +17,33 @@ import javax.persistence.Id;
  * @author jeison
  */
 @Entity
-public class TipoUsuarioEntity implements Serializable{
-    
-    
+public class TipoUsuarioEntity implements Serializable {
+
     /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-    private final static long serialVersionUID= 1L;
-    
+    private final static long serialVersionUID = 1L;
+
     /**
      * llave primaria de la entidad tipo de usuario
      */
     @Id
     @Column(name = "cod_t_usuario", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long codido_tipo_usuario;
-    
+    private long codigo_tipo_usuario;
+
     /**
      * variable que almacena el nombre del tipo de usuario
      */
     @Column(name = "nom_t_usuario", nullable = false)
     private String nombre_tipo_usuario;
 
-    public long getCodido_tipo_usuario() {
-        return codido_tipo_usuario;
+    public long getCodigo_tipo_usuario() {
+        return codigo_tipo_usuario;
     }
 
     public void setCodido_tipo_usuario(long codido_tipo_usuario) {
-        this.codido_tipo_usuario = codido_tipo_usuario;
+        this.codigo_tipo_usuario = codido_tipo_usuario;
     }
 
     public String getNombre_tipo_usuario() {
@@ -55,7 +54,4 @@ public class TipoUsuarioEntity implements Serializable{
         this.nombre_tipo_usuario = nombre_tipo_usuario;
     }
 
-    
-    
-    
 }

@@ -5,13 +5,13 @@
  */
 package co.konradlorenz.edu.co.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 /**
@@ -19,46 +19,47 @@ import javax.persistence.ManyToOne;
  * @author jeison
  */
 @Entity
-public class UsuarioEntity {
-    
-    
-     /**
+public class UsuarioEntity implements Serializable {
+
+    /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-         private final static long serialVersionUID= 1L;
-    
+    private final static long serialVersionUID = 1L;
+
     /**
-     * llave primaria del entity usuario
-     * variable que almacena el codigo del usuario
+     * llave primaria del entity usuario variable que almacena el codigo del
+     * usuario
      */
     @Id
     @Column(name = "cod_usuario", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codido_usuario;
-    
+
     @ManyToOne
-    @JoinColumn(name="cod_t_usuario")
-    private TipoUsuarioEntity tipousuarioentity;
-    
+    @JoinColumn(name = "cod_t_usuario")
+    private TipoUsuarioEntity tipoUsuarioEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "cod_ciudad")
+    private CiudadEntity ciudadEntity;
     /**
      * variable que captura el nombre del usuario
      */
     @Column(name = "nom_usuario", nullable = false)
     private String nombre_usuario;
-    
-    
+
     /**
      * variable que captura el apellido del usuario
      */
     @Column(name = "ape_usuario", nullable = false)
     private String apellido_usuario;
-    
+
     /**
      * variable que captura el tipo de usuario
      */
     @Column(name = "cod_t_usuario", nullable = false)
     private long codigo_tipo_usuario;
-    
+
     /**
      * variable que captura el correo del usuario
      */
@@ -104,6 +105,21 @@ public class UsuarioEntity {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-    
-    
+
+    public TipoUsuarioEntity getTipoUsuarioEntity() {
+        return tipoUsuarioEntity;
+    }
+
+    public void setTipoUsuarioEntity(TipoUsuarioEntity tipoUsuarioEntity) {
+        this.tipoUsuarioEntity = tipoUsuarioEntity;
+    }
+
+    public CiudadEntity getCiudadEntity() {
+        return ciudadEntity;
+    }
+
+    public void setCiudadEntity(CiudadEntity ciudadEntity) {
+        this.ciudadEntity = ciudadEntity;
+    }
+
 }

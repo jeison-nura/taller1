@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author jeison
+ * @author G1
  */
 @Stateless
 public class CiudadPersistence {

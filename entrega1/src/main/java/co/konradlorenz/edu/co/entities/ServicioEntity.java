@@ -5,6 +5,7 @@
  */
 package co.konradlorenz.edu.co.entities;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,13 +17,13 @@ import javax.persistence.Id;
  * @author jeison
  */
 @Entity
-public class ServicioEntity {
-     /**
+public class ServicioEntity implements Serializable {
+
+    /**
      * Atributo estático para el manejo de versiones de la entidad
      */
-    private final static long serialVersionUID= 1L;
-    
-    
+    private final static long serialVersionUID = 1L;
+
     /**
      * llave primaria se la entidad servicio
      */
@@ -30,13 +31,13 @@ public class ServicioEntity {
     @Column(name = "cod_servicio", unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo_servicio;
-    
+
     /**
      * variable que almacena el nombre del servicio
      */
     @Column(name = "nom_servicio", nullable = false)
     private String nombre_servicio;
-    
+
     /**
      * variable que almacena el costo del servicio
      */
@@ -66,6 +67,5 @@ public class ServicioEntity {
     public void setCosto(long costo) {
         this.costo = costo;
     }
-    
-    
+
 }
